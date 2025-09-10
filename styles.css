@@ -1,8 +1,69 @@
-/* CSS BY NAME */
 /* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+/* CSS BY NAME */
+body{
+    font-family: Inter, san-serif;
+}
+h1, h2{
+    font-family: "Kavoon", sans-serif;
+}
+h1{
+    font-size: 3em;
+    margin: 0;
+}
+nav h2{
+    font-size: 1.5em;
+    font-family: Inter, san-serif;
+    font-style: italic;
+    margin: 0;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.5em;
+}
+h4{
+    font-size: 1.15em;
+}
+header{
+    text-align: center;
+    padding: 10px 30px;
+    color: var(--white);
+    background-color: var(--purple);
+}
+nav{
+    text-align: center;
+    background-color: var(--yellow);
+    padding: 10px 30px;
+}
+nav ul li a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+ul li{
+    background-color: var(--white);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
 /* CSS REST */
+
 /* ROOT VARIABLES */
+:root {
+    --teal :#4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57; 
+    --pink:#D9526F;
+    --dark-gray:#1E1E1E; 
+    --white:#ffffff; 
+}
 /* GLOBAL STYLES (mobile first/small) */
 body{
     max-width: 450px;
