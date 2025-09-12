@@ -206,6 +206,6 @@ footer{
     text-align: center;
     padding: 40px 60px;
 }
-footer > a, p{
+footer > a, footer > p{
     color: var(--white);
 }
