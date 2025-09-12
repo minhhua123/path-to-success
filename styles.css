@@ -62,43 +62,59 @@ table {
     --white:#ffffff; 
 }
 /* GLOBAL STYLES (mobile first/small) */
+html{
+    display: flex;
+    justify-content: center;
+    background-color: var(--lavender);
+}
 body{
     font-family: Inter, san-serif;
     max-width: 450px;
+    line-height: 1.75em;
+    color: var(--dark-gray);
+    margin: 20px 0;
 }
 h1, h2{
     font-family: "Kavoon", sans-serif;
 }
 h1{
     font-size: 3em;
-    margin: 0;
+    margin: 15px;
 }
 nav h2{
     font-size: 1.5em;
     font-family: Inter, san-serif;
     font-style: italic;
     font-weight: bold;
-    margin: 10px;
+    margin-bottom: 10px;
+    color: var(--dark-gray);
 }
 h2{
     font-size: 2em;
+    color: var(--white);
+    margin-bottom: 15px;
 }
 h3{
     font-size: 1.5em;
+    font-weight: bold;
+    color: var(--yellow);
+    margin: 5px 0;
 }
 h4{
     font-size: 1.15em;
+    font-weight: bold;
+    color: var(--purple);
 }
 header{
     text-align: center;
-    padding: 10px 30px;
+    padding: 30px;
     color: var(--white);
     background-color: var(--purple);
 }
 nav{
     text-align: center;
     background-color: var(--yellow);
-    padding: 10px 30px;
+    padding: 15px 30px;
 }
 nav ul li a {
     text-decoration: none;
@@ -109,7 +125,87 @@ ul{
 ul li{
     background-color: var(--white);
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 15px;
     font-weight: bolder;
     text-transform: uppercase;
+}
+#our-services, #pricing{
+    background-color: var(--purple);
+    padding: 20px;
+}
+.service{
+    background-color: var(--white);
+    margin: 15px 0;
+    border-radius: 1em;;
+    padding: 20px;
+}
+#why-choose-us, #schedule{
+    background-color: var(--pink);
+    padding: 15px;
+}
+#why-choose-us-list{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+#why-choose-us-list li{
+    margin: 8px;
+    padding: 40px 0;
+    border-radius: 1em;
+    text-align: center;
+    text-transform: none;
+    font-size: 1.25em;
+    line-height: 1;
+}
+#personal{
+    background-color: var(--teal);
+}
+#proven{
+    background-color: var(--lavender);
+}
+#supportive{
+    background-color: var(--yellow);
+}
+#flexible{
+    background-color: var(--white);
+}
+table{
+    background-color: var(--yellow);
+    margin: 0 auto;
+}
+th{
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+td{
+    background-color: var(--white);
+    border: 2px solid var(--yellow);
+    padding: 10px;
+}
+#schedule{
+    color: var(--white);
+}
+#schedule a{
+    background-color: var(--white);
+    display: block;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--dark-gray);
+    margin: 0 20px;
+    border-radius: 1em;
+    box-shadow: 6px 5px 3px 0px var(--dark-gray)
+}
+footer{
+    display: grid;
+    font-size: 0.8em;
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+    background-color: var(--purple);
+    text-align: center;
+    padding: 40px 60px;
+}
+footer > a, p{
+    color: var(--white);
 }
